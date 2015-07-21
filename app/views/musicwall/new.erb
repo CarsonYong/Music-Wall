@@ -1,11 +1,27 @@
+
+
+
+<% if @songs && @songs.errors.any? %>
+  <div>
+    <strong>Some issues with your song, please fix them:</strong>
+    <ul>
+      <% @songs.errors.full_messages.each do |song| %>
+        <li><%= song %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
 <form method="post" action="/musicwall">
   <div>
     <label>Song Title:</label>
-    <input type="text" name="song_title">
+    <input type="text" name="song_title"
+    value="<%= @songs && @songs.song_title %>">
   </div>
   <div>
     <label>Author:</label>
-    <input type="text" name="author">
+    <input type="text" name="author"
+    value="<%= @songs && @songs.author %>">
   </div>
   <div>
     <label>URL:</label>

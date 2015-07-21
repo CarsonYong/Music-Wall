@@ -1,23 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <link href='http://fonts.googleapis.com/css?family=Lobster|Shadows+Into+Light|Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <!--
     normalize.css removes cross-browser differences in defaults, e.g.,
     differences in how form elements appear between Firefox and IE
     See: http://necolas.github.com/normalize.css/
   -->
-  <link rel="stylesheet" href="/stylesheets/normalize.css">
+ <!--  <link rel="stylesheet" href="/stylesheets/normalize.css"> -->
+
+
+
+
   <!--
     application.css is where you put your styles
   -->
+
+   <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="/css/style.css">
+
   <link rel="stylesheet" href="/stylesheets/application.css">
+
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/javascript/application.js"></script>
 
   <title></title>
+
+
+
 </head>
 <body>
+
+
+
+    
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/musicwall">Carson's uber cool music wall!</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/musicwall">Home</a></li>
+            <li><a href="/musicwall/new">Post a new song!</a></li>
+            <li><a href="/musicwall/signup">Sign Up</a></li>
+            <li><a href="/musicwall/login">Login</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<!--header -->
+
+
+<div class="container">
+
+
   <%= yield %>
+  </div>
 </body>
+
+
+
+<!--footer -->
+          <div class="mastfoot">
+            <div class="inner">
+      <footer>
+        <p>&copy; Carson's Music Wall - 2015</p>
+      </footer>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
 </html>

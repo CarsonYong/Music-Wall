@@ -1,0 +1,95 @@
+
+/*
+ * Affix and center
+ */
+
+
+ body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
+
+
+
+
+
+
+
+/* MY CSS */
+
+
+
+.navbar{
+  background-color: black;
+}
+.nav {
+  font-size: 1em;
+  color: #23527C; 
+}
+
+
+body {
+  font-family: 'Lobster';
+  background-color: #333;
+  /*background-color: #6ab47b;*/
+
+}
+
+form {
+  color: #23527C;
+  margin: 0 auto;
+}
+
+.songs {
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.container {
+  width: 800px;
+}
+
+.navbar-brand {
+  font-size: 2.5em;
+  color: #23527C;
+}
+
+
+
+/*margin: 0 auto;
+display: block;
+width: 300px;*/

@@ -1,0 +1,15 @@
+<form method="post" action="/musicwall/signup">
+  <div>
+    <label>Email:</label>
+    <input type="text" name="email"
+    value="<%= @users && @users.email %>">
+  </div>
+  <div>
+    <label>Password:</label>
+    <input type="text" name="password"
+    value="<%= @users && @users.password %>">
+  </div>
+  <div>
+    <input type="submit" value="Submit">
+  </div>
+</form>
